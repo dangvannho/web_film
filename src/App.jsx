@@ -5,9 +5,9 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="flex h-screen">
+    <div className="flex flex-col lg:flex-row h-screen">
       <SideBar />
-      <div className="w-4/5 h-max bg-cyan-50 ml-[340px]">
+      <div className="w-full lg:w-4/5 h-max bg-cyan-50 mt-[52px] lg:mt-[0px] lg:ml-[20%]">
         <Header />
         <Main />
       </div>

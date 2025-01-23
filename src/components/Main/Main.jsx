@@ -52,7 +52,7 @@ function Main() {
       </h1>
       <p className="text-3xl py-4 border-b border-primary mt-2">Trending</p>
 
-      <div className="grid grid-cols-4 gap-5 mt-8">
+      <div className="grid grid-cols-1 tablet:grid-cols-3 laptop:grid-cols-4 gap-5 mt-8">
         {movieData.map((item, index) => {
           return (
             <FilmItem
@@ -65,7 +65,6 @@ function Main() {
           );
         })}
       </div>
-
       <button className="btn my-8 mx-auto block hover:scale-125">
         Load more
       </button>
